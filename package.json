@@ -1,7 +1,7 @@
 {
   "name": "@nimahkh/iran_beauty",
-  "version": "3.0.0",
-  "description": "list of iran cities and province",
+  "version": "3.0.1",
+  "description": "list of iran cities and provinces",
   "license": "MIT",
   "repository": "nimahkh/iran_beauty",
   "main": "index.js",
