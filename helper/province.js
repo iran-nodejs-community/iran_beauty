@@ -1,4 +1,4 @@
-let province = [
+const province = [
         {
             "id":1,
             "name":"آذربایجان شرقی",

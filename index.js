@@ -1,27 +1,13 @@
-let province = require('./helper/province.js');
-let city = require('./helper/city.js');
+const province = require('./helper/province');
+const city = require('./helper/city');
 
-module.exports.getProvinces = function () {
-    let provinces = [];
-    for (let i = 0; i < province.length; i++) {
-        provinces.push({
-            name: province[i].name,
-            id: province[i].id
-        });
-    }
-    return provinces;
+exports.getProvinces = function () {
+	return province
+		.map(({id, name}) => ({id, name}));
 };
 
-module.exports.getCities = function (cityID) {
-    let cities = [];
-    for (let i = 0; i < city.length; i++) {
-        if (city[i].province === cityID) {
-            cities.push({
-                id: city[i].id,
-                name: city[i].name,
-                province: city[i].province
-            })
-        }
-    }
-    return cities;
+exports.getCities = function (provinceID) {
+	return city
+		.filter(c => c.province === provinceID)
+		.map(({id, name, province}) => ({id, name, province}));
 };
