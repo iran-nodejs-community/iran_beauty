@@ -1,14 +1,14 @@
-##IRAN Beauty
+## IRAN Beauty
 
-#####a nodejs package to list Iran country cities
+##### a nodejs package to list Iran country cities
 
-######Installation
+###### Installation
 
 ```
 npm install iran_beauty
 ```
 
-######Run in Codes
+###### Run in Codes
 
 ```
 let convertor=require('iran_beauty');
@@ -20,17 +20,17 @@ for(let i=0;i<provinces.length;i++){
 }
 ```
 
-#######Methods
-#####getCities
+####### Methods
+##### getCities
 this method , export all cities with given id 
-#####example
+##### example
 ```
 convertor.getCities(1)// will return cities of province with id 1
 ```
 
-#####getProvince
+##### getProvince
 this method , export all provinces
-#####example
+##### example
 ```
 convertor.getProvince()// will return provinces
 ```
