@@ -20,7 +20,7 @@ for(let i=0;i<provinces.length;i++){
 }
 ```
 
-###### Methods
+### Methods
 ##### getCities
 this method , export all cities with given id 
 ##### example
