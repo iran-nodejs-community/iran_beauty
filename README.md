@@ -5,13 +5,13 @@
 ###### Installation
 
 ```
-npm install iran_beauty
+npm install @nimahkh/iran_beauty
 ```
 
 ###### Run in Codes
 
 ```
-let convertor=require('iran_beauty');
+let convertor=require('@nimahkh/iran_beauty');
 
 let provinces=convertor.getProvinces(); //List all of provinces
 
