@@ -11,9 +11,9 @@ npm install @nimahkh/iran_beauty
 ###### Run in Codes
 
 ```
-let convertor=require('@nimahkh/iran_beauty');
+const convertor=require('@nimahkh/iran_beauty');
 
-let provinces=convertor.getProvinces(); //List all of provinces
+const provinces=convertor.getProvinces(); //List all of provinces
 
 for(let i=0;i<provinces.length;i++){
     console.log(provinces[i].name,convertor.getCities(provinces[i].id))
