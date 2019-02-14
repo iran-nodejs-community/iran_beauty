@@ -1,5 +1,5 @@
-let province = require('./helper/province.js');
-let city = require('./helper/city.js');
+const province = require('./helper/province.js');
+const city = require('./helper/city.js');
 
 exports.getProvinces = function () {
 	return province
