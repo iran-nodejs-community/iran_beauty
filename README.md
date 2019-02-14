@@ -1,6 +1,6 @@
 ## IRAN Beauty
 
-##### a nodejs package to list Iran country cities
+##### a nodejs package to list Iran cities
 
 ###### Installation
 
