@@ -1,0 +1,14 @@
+{
+  "name": "@nimahkh/iran_beauty",
+  "version": "1.0.0",
+  "description": "list of iran cities and province",
+  "license": "MIT",
+  "repository": "nimahkh/iran_beauty",
+  "main": "index.js",
+  "keywords": [
+    "tiny",
+    "npm",
+    "package",
+    "bamblehorse"
+  ]
+}
