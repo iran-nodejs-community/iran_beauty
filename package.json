@@ -10,5 +10,8 @@
     "npm",
     "cities",
     "iran cities"
-  ]
+  ],
+  "dependencies": {
+    "haversine": "^1.1.1"
+  }
 }
