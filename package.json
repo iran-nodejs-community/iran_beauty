@@ -12,6 +12,9 @@
     "iran cities"
   ],
   "dependencies": {
-    "haversine": "^1.1.1"
+    "chai": "^4.2.0",
+    "haversine": "^1.1.1",
+    "mocha": "^5.2.0",
+    "object.pick": "^1.3.0"
   }
 }
