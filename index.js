@@ -1,5 +1,5 @@
 const provinces = require('./data/provinces');
-const cities = require('./data/city');
+const cities = require('./data/cities');
 
 exports.getProvinces = function () {
 	return provinces
@@ -11,3 +11,4 @@ exports.getCities = function (provinceID) {
 		.filter(c => c.province === provinceID)
 		.map(({id, name, province}) => ({id, name, province}));
 };
+
