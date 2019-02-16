@@ -1,2 +1,4 @@
 .idea
 .tern-port
+**/*[#]*
+**/node_modules/
