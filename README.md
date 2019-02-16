@@ -11,28 +11,35 @@ npm install @nimahkh/iran_beauty
 ###### Run in Codes
 
 ```
-const convertor=require('@nimahkh/iran_beauty');
+const geoData=require('./lib/geo-data');
+const tehran = Object.freeze({
+  latitude: 35.715298,
+  longitude: 51.404343
+});
 
-const provinces=convertor.getProvinces(); //List all of provinces
+const find=geoData.findProvincesAround(tehran, {
+  radius: 1000,
+  unit: 'km'
+});
 
-for(let i=0;i<provinces.length;i++){
-    console.log(provinces[i].name,convertor.getCities(provinces[i].id))
-}
+
+const provinces=geoData.getProvinces();
+const cities=geoData.getCities(1);
+const citiesAround=geoData.findCitiesAround(tehran)
+const nearestProvince=geoData.findNearestProvince(tehran,{radius:1000,unit:'km'})
+
 ```
 
 ### Methods
 ##### getCities
 this method , export all cities with given id 
-##### example
-```
-convertor.getCities(1)// will return cities of province with id 1
-```
-
 ##### getProvince
 this method , export all provinces
-##### example
-```
-convertor.getProvince()// will return provinces
-```
+##### findCitiesAround
+this method , export cities around of imported city
+##### findProvincesAround
+this method , export nearest province around of imported province
+##### findNearestProvince
+this method , export nearest province
 
 With Love For Iran :heartpulse:
